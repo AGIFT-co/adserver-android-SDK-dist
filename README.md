@@ -12,11 +12,12 @@
 
 ```kotlin
 dependencies {
-    // 直接配信のみ使う場合
+    // 直接配信（現在の提供形態）
     implementation("jp.co.agift.adserver:sdk:<version>")
 
-    // AdMob メディエーション（カスタムイベント）を併用する場合はこちら（コアも推移的に入ります）
-    implementation("jp.co.agift.adserver:sdk-admob:<version>")
+    // AdMob メディエーションアダプタ（sdk-admob）は現在配布していません。
+    // 提供を開始する際は当社から案内します。
+    // implementation("jp.co.agift.adserver:sdk-admob:<version>")
 }
 ```
 
