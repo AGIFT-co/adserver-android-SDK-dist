@@ -1,5 +1,8 @@
 # AdMob ポリシー準拠ガイド
 
+> ⚠️ **AdMob メディエーションアダプタ（`jp.co.agift.adserver:sdk-admob`）は現在 Maven Central では配布していません。**
+> 本ドキュメントはアダプタ提供開始後（AdMob 経路を利用する場合）に適用されます。直接配信のみの利用には関係しません。
+
 ## 概要
 
 本ドキュメントは、AdServer Android SDKがGoogle AdMobの利用規約および開発者ポリシーに準拠していることを説明します。
