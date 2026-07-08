@@ -54,10 +54,10 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    // 直接配信のみ（AdMob 非依存・推奨）
+    // 直接配信（現在の提供形態）
     implementation("jp.co.agift.adserver:sdk:<version>")
 
-    // AdMob メディエーション経由でも使う場合はこちら（コアも自動で入る）
+    // AdMob メディエーションアダプタ（sdk-admob）は現在配布していません（提供開始時に案内します）
     // implementation("jp.co.agift.adserver:sdk-admob:<version>")
 }
 ```
