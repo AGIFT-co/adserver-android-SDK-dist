@@ -20,7 +20,7 @@ Copyright (c) 2026 株式会社agift. All rights reserved.
 
 【第三者コンポーネント】
 
-現在配布しているのはコア（jp.co.agift.adserver:sdk・直接配信）のみです。コアは Google LLC 製ライブラリに依存しません。
+現在配布しているのはコア（jp.co.agift.adserver:sdk・直接配信）のみです。コアは Google LLC 製のプロプライエタリライブラリ（Google Mobile Ads SDK 等）に依存しません。
 
 AdMob メディエーション連携用のアダプタ（jp.co.agift.adserver:sdk-admob）は、現在配布していません。当社がアダプタを提供する場合、アダプタは以下の Google LLC 製ライブラリに依存します。これらはバイナリ形式で Google より提供されるプロプライエタリ製品であり、それぞれ固有の利用規約が適用されます。利用者はこれらの規約に個別に同意する必要があります。
 
@@ -32,11 +32,12 @@ AdMob メディエーション連携用のアダプタ（jp.co.agift.adserver:sd
 
 AdMob メディエーション経由で本SDKを利用するアプリ開発者（パブリッシャー）は、自身の Google AdMob アカウントを保有し、Google と直接契約していることが必要です。当社を介した間接的な契約関係では、Google の利用規約上 AdMob を使用することができません。
 
-また、本SDK（コア）は以下のオープンソースライブラリに依存し、これらは Maven の依存解決により利用者のビルド環境で取得されます（本SDKのバイナリには同梱されません）。各ライブラリには Apache License 2.0 が適用されます。
+また、本SDK（コア）は以下のオープンソースライブラリ（推移的依存を含む）に依存し、これらは Maven の依存解決により利用者のビルド環境で取得されます（本SDKのバイナリには同梱されません）。各ライブラリには Apache License 2.0 が適用されます。
 
-  - OkHttp（Square, Inc.）
-  - Gson（Google LLC）
-  - Kotlin 標準ライブラリ / kotlinx-coroutines（JetBrains s.r.o.）
+  - OkHttp / Okio（Square, Inc.）
+  - Gson / Error Prone Annotations（Google LLC）
+  - Kotlin 標準ライブラリ / kotlinx-coroutines / JetBrains Annotations（JetBrains s.r.o.）
+  - AndroidX Annotation（The Android Open Source Project）
 
 ---
 
