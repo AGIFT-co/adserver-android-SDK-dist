@@ -46,8 +46,6 @@ dependencyResolutionManagement {
 }
 ```
 
-> ⚠️ 初回公開の準備中です。公開時期・正確なバージョンは当社から案内します。
-
 ### 3-2. 依存関係の追加
 
 `app/build.gradle.kts` に、利用する経路に応じて追加します。
@@ -55,14 +53,14 @@ dependencyResolutionManagement {
 ```kotlin
 dependencies {
     // 直接配信（現在の提供形態）
-    implementation("jp.co.agift.adserver:sdk:<version>")
+    implementation("jp.co.agift.adserver:sdk:0.0.1")
 
     // AdMob メディエーションアダプタ（sdk-admob）は現在配布していません（提供開始時に案内します）
     // implementation("jp.co.agift.adserver:sdk-admob:<version>")
 }
 ```
 
-バージョンは当社が案内するものを**完全一致で固定**してください（例: `0.0.1`。プレリリース版なら `0.0.1-rc.1`）。当社は版ごとに動作確認したバージョンを案内します。
+バージョンは当社が案内するものを**完全一致で固定**してください（現在の案内バージョン: `0.0.1`）。当社は版ごとに動作確認したバージョンを案内します。
 
 > ⚠️ `0.0.+` 等の動的バージョン指定は使用しないでください。検証していない版が自動で取り込まれることを防ぐため、更新は当社からの案内に基づく手動更新をお願いします。
 
